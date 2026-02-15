@@ -1,67 +1,91 @@
-# proyecto-final-programacion
-Proyecto final del curso de Introducción a la Programación
+Proyecto Final — Cotizador de Seguros TK‑U  
+Curso: Introducción a la Programación de Computadoras  
+
+Este proyecto consiste en desarrollar un **cotizador automático de seguros** para la empresa TK‑U, ubicada en la ciudad de Jedha.  
+El sistema calcula el precio final del seguro aplicando recargos según la edad del asegurado, el estado civil y la cantidad de hijos.
+
+---
+
 1. Análisis del Problema
-La empresa TK‑U realiza muchas cotizaciones al día, pero como el proceso es manual, solo logran hacer alrededor de 50. Esto causa atrasos y pérdida de clientes.
-El programa debe calcular el precio final del seguro aplicando recargos según:
-✔ Edad del asegurado
-- 18–24 años → 10%
-- 25–49 años → 20%
-- 50+ años → 30%
-✔ Estado civil y edad del cónyuge
-Si el asegurado está casado, se aplica otro recargo usando los mismos rangos de edad.
-✔ Cantidad de hijos
-Cada hijo agrega un 20% del precio base.
+
+La empresa TK‑U realiza cientos de cotizaciones al día, pero el proceso es manual, lo que provoca:
+
+- Atrasos en la entrega  
+- Límite de solo 50 cotizaciones diarias  
+- Pérdida de posibles clientes  
+
+El objetivo del programa es **automatizar el cálculo de la cotización**, aplicando recargos según:
+
+ Edad del asegurado  
+- 18–24 años → 10%  
+- 25–49 años → 20%  
+- 50 años o más → 30%
+
+Estado civil y edad del cónyuge  
+Si el asegurado está casado, se aplica un recargo adicional usando los mismos rangos de edad.
+
+Cantidad de hijos  
+Cada hijo genera un recargo del **20% del precio base**.
+
+---
 
 2. Algoritmo del Programa (Paso a Paso)
-1. 	Pedir el nombre del asegurado.
-2. 	Pedir la edad del asegurado.
-3. 	Si es menor de 18, terminar el programa.
-4. 	Definir el precio base (Q.2000).
-5. 	Calcular el recargo según la edad del asegurado.
-6. 	Preguntar si está casado.
-7. 	Si está casado, pedir la edad del cónyuge y calcular su recargo.
-8. 	Preguntar si tiene hijos.
-9. 	Si tiene, pedir cuántos y calcular el recargo total por hijos.
-10. 	Sumar todos los recargos.
-11. 	Calcular el precio final:
-precio_final = precio_base + recargo_total
-12. 	Mostrar el resultado al usuario.
 
-3.Código del Proyecto
+1. Solicitar nombre del asegurado.  
+2. Solicitar edad del asegurado.  
+3. Verificar que sea mayor de edad.  
+4. Definir el precio base (Q.2000).  
+5. Calcular recargo según la edad del asegurado.  
+6. Preguntar si está casado.  
+7. Si está casado, solicitar edad del cónyuge y calcular su recargo.  
+8. Preguntar si tiene hijos.  
+9. Si tiene, solicitar cuántos y calcular el recargo total por hijos.  
+10. Sumar todos los recargos.  
+11. Calcular el precio final:  
+   **precio_final = precio_base + recargo_total**  
+12. Mostrar el resultado al usuario.
+
+---
+
+3. Archivo Principal
+
 El archivo principal del proyecto es:
-proyecto_final.js
 
-Este archivo contiene:
-• 	Conversión de datos ingresados por el usuario
-• 	Cálculo de recargos
-• 	Suma total
-• 	Precio final
-• 	Alertas con los resultados
 
- 4. Cómo Ejecutar el Programa
-1. 	Abrí el archivo  en tu editor (VS Code, Sublime, etc.).
-2. 	Copiá el contenido en un archivo HTML o usá un entorno que permita  y .
-3. 	Ejecutá el archivo en un navegador web.
-4. 	Ingresá los datos cuando el programa te los pida.
-5. 	El sistema mostrará el recargo total y el precio final del seguro
+Este archivo contiene toda la lógica del cotizador:
 
- 4. Cómo Ejecutar el Programa
-1. 	Abrí el archivo  en tu editor (VS Code, Sublime, etc.).
-2. 	Copiá el contenido en un archivo HTML o usá un entorno que permita  y .
-3. 	Ejecutá el archivo en un navegador web.
-4. 	Ingresá los datos cuando el programa te los pida.
-5. 	El sistema mostrará el recargo total y el precio final del seguro
+- Conversión de datos ingresados  
+- Condicionales por edad  
+- Recargo por cónyuge  
+- Recargo por hijos  
+- Suma total  
+- Cálculo del precio final  
+- Alertas con los resultados  
 
-proyecto-final-programacion/
-│
-├── proyecto_final.js
-├── README.md
-└── (opcional) analisis_problema.md
+---
+
+4. Cómo Ejecutar el Programa
+
+1. Abrir el archivo `proyecto_final.js` en un editor de texto.  
+2. Copiar el contenido dentro de un archivo HTML o ejecutarlo en un entorno que soporte `prompt()` y `alert()`.  
+3. Abrir el archivo en un navegador web.  
+4. Ingresar los datos solicitados.  
+5. El sistema mostrará el recargo total y el precio final.
+
+---
+
+5. Estructura del Repositorio
+   
+---
 
 6. Autor
-Proyecto realizado por: Juan Pablo López López
-Curso: Introducción a la Programación de Computadoras
-Año: 2026
+
+**Juan Pablo López López**  
+Introducción a la Programación de Computadoras  
+Año 2026
+
+---
 
 7. Estado del Proyecto
+
 Proyecto completado y funcional.
