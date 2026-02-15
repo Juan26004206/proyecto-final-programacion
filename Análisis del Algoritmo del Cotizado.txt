@@ -1,0 +1,57 @@
+Análisis del Algoritmo del Cotizador de Seguros TK-U
+
+Este documento explica paso a paso el algoritmo utilizado en el programa para calcular el precio final del seguro, detallando la lógica y el flujo de datos.
+
+Objetivo
+
+El algoritmo busca automatizar el cálculo del precio final del seguro aplicando recargos basados en la edad del asegurado, estado civil, edad del cónyuge y cantidad de hijos.
+
+Descripción del Algoritmo
+
+Entrada de datos:
+
+Se solicita el nombre del asegurado.
+
+Se solicita la edad del asegurado.
+
+Validación:
+
+Si la edad es menor a 18 años, el programa termina, ya que no se puede asegurar a menores.
+
+Inicialización:
+
+Se define un precio base fijo de Q.2000.
+
+Cálculo de recargos:
+
+Según la edad del asegurado, se aplica un porcentaje de recargo:
+
+18–24 años: 10%
+
+25–49 años: 20%
+
+50+ años: 30%
+
+Si el asegurado está casado, se solicita la edad del cónyuge y se aplica el mismo esquema de recargos.
+
+Si el asegurado tiene hijos, se calcula un recargo adicional del 20% del precio base por cada hijo.
+
+Suma de recargos:
+
+Se suman todos los recargos calculados.
+
+Cálculo del precio final:
+
+Se suma el precio base más el total de recargos para obtener el precio final.
+
+Salida:
+
+Se muestra el precio final al usuario.
+
+Consideraciones
+
+El algoritmo utiliza condicionales para aplicar recargos según rangos de edad.
+
+Se asegura que el programa no continúe con datos inválidos (menores de 18 años).
+
+La modularidad del algoritmo facilita futuras modificaciones o ampliaciones.

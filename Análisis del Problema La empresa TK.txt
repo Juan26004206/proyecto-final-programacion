@@ -1,0 +1,4 @@
+Análisis del Problema La empresa TK‑U realiza muchas cotizaciones al día, pero como el proceso es manual, solo logran hacer alrededor de 50. Esto causa atrasos y pérdida de clientes. El programa debe calcular el precio final del seguro aplicando recargos según: ✔ Edad del asegurado
+18–24 años → 10%
+25–49 años → 20%
+50+ años → 30% ✔ Estado civil y edad del cónyuge Si el asegurado está casado, se aplica otro recargo usando los mismos rangos de edad. ✔ Cantidad de hijos Cada hijo agrega un 20% del precio base.
